@@ -2,11 +2,11 @@ node
 {
 stage('svn')
 {
-git branch: 'master', url: 'https://github.com/sujith140/spring-petclinic.git'
+git branch: 'sprint1', url: 'https://github.com/sujith140/spring-petclinic.git'
 }
 stage('package')
 {
-sh 'mvn package'
+sh 'mvn clean package'
 }
 stage('archiev')
 {
