@@ -15,5 +15,10 @@ archiveArtifacts 'target/*.jar'
 stage('results')
 {
 junit 'target/surefire-reports/*.xml'
+} 
+stage('end')
+{
+echo 'successfully completed'
 }
 }
+
