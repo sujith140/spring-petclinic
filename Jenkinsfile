@@ -10,7 +10,7 @@ sh 'mvn package'
 }
 stage('archiev')
 {
-archiveArtifacts 'target/*.xml'
+archiveArtifacts 'target/*.jar'
 }
 stage('results')
 {
