@@ -8,7 +8,7 @@ stage('package')
 {
 sh 'mvn package'
 }
-stage(archiev')
+stage('archiev')
 {
 archiveArtifacts 'target/*.xml'
 }
