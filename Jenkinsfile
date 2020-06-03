@@ -20,8 +20,11 @@ stage('results')
 {
 junit 'target/surefire-reports/*.xml'
 }
+stage('echo')
+{
 if(env.branch=='sprint1')
 {
 echo 'successfully completed execution'
+}
 }
 }
