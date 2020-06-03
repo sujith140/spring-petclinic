@@ -2,7 +2,7 @@ node
 {
 stage('svn')
 {
-git url: 'https://github.com/sujith140/spring-petclinic.git'
+git 'https://github.com/sujith140/spring-petclinic.git'
 }
 stage('package')
 {
@@ -11,6 +11,7 @@ sh 'mvn package'
 }
 else{
 sh 'mvn clean package'
+}
 }
 stage('archiev')
 {
